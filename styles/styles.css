@@ -1,0 +1,102 @@
+/* ------ Elements ------- */
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('/styles/fonts/Proxima\ Nova\ Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ProximaNovaSemiBold';
+  src: url('/styles/fonts/Proxima\ Nova\ Semibold.ttf');
+}
+
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('/styles/fonts/Proxima\ Nova\ Extrabold.ttf');
+}
+
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url('/styles/fonts/Proxima\ Nova\ Light.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/styles/fonts/Helvetica.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica Light';
+  src: url('/styles/fonts/Helvetica-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Averia';
+  src: url('/styles/fonts/AveriaSerifLibre-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'AveriaItalic';
+  src: url('/styles/fonts/AveriaSerifLibre-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'AveriaBold';
+  src: url('/styles/fonts/AveriaSerifLibre-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Cardinal';
+  src: url('/styles/fonts/cardinalclassicmidweb-regular.woff2');
+}
+
+@font-face {
+  font-family: 'CardinalItalic';
+  src: url('/styles/fonts/cardinalclassicmidweb-italic.woff2');
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  /* Add loading animation with 1s fade in */
+  animation: fadeIn 0.8s forwards;
+}
+
+
+/* ------ Animations ------- */
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+.faded-out {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Disable scrollbar on any element */
+::-webkit-scrollbar {
+  display: none;
+}
