@@ -87,6 +87,64 @@ body {
   text-align: center;
 }
 
+.people-title {
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 200px;
+}
+/* Add a people section with 3 people horizontally side to side */
+/* Each person has their photo, then underneath their name in bold, their underneath their lab name in italic */
+.people {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; /* Distribute space evenly between items */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if they don't fit */
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+}
+
+/* Bold centered title */
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+.person .photo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.person .photo img {
+  max-height: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.person .name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.person .description {
+  font-weight: lighter;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -165,21 +223,6 @@ button {
 
   .container .description{
     font-size: 14px;
-  }
-  .tarot-deck {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    overflow: hidden;
-    margin-bottom: 50px;
-    gap: 0px;
-  }
-
-  .tarot-card {
-    width: 30vw;
-    height: calc(3/2 * 30vw);
-    padding: 0;
-    margin-top: 10px;
   }
 
   .contact-container {
