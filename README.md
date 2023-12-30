@@ -1,1 +1,0 @@
-# Meditron: Open validation platform
