@@ -94,8 +94,7 @@ body {
   text-align: center;
   margin-top: 200px;
 }
-/* Add a people section with 3 people horizontally side to side */
-/* Each person has their photo, then underneath their name in bold, their underneath their lab name in italic */
+
 .people {
   display: flex;
   flex-direction: row;
@@ -107,8 +106,6 @@ body {
   margin-right: 10%;
   margin-top: 50px;
 }
-
-/* Bold centered title */
 
 .person {
   display: flex;
