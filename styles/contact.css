@@ -24,22 +24,15 @@ body {
 }
 
 .container .description{
-  font-size: 18px;
+  font-size: 20px;
   color: #555;
   line-height: 1.5;
   width: 100%;
 }
 .container .description a {
-  /* no underline, but add bold and italic */
   font-style: italic;
   font-weight: bold;
   text-decoration: none;
-  color: black;
-}
-/* on hover, change the color to red SOFTLY */
-.container .description a:hover {
-  color: purple;
-  transition: color 0.3s;
 }
 
 .typing-container {
@@ -67,13 +60,12 @@ body {
   width: 60%;
 }
 
-.about-content a {
+.about-content a, .description a {
   color: #555;
-  font-weight: bold;
   text-decoration: none;
 }
 /* on hover, change color to #6c5ce7; */
-.about-content a:hover {
+.about-content a:hover, .description a:hover {
   color: #6c5ce7;
   transition: color 0.3s;
 }
