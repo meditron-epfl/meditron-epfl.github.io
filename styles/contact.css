@@ -41,24 +41,25 @@ body {
   color: purple;
   transition: color 0.3s;
 }
+
 .typing-container {
-  color: #555 ;
+  color: #555;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align content to the left */
-  text-align: left; /* Align text to the left */
   white-space: nowrap;
-  width: 60%;
-  margin-left: auto;
+  margin-left: 38%; /* Adjust the margin for better positioning */
   font-size: 18px;
   height: 60px;
+  width: 100%
 }
 
 .typing {
   display: inline-block;
-  padding-right: 3px;
+  /*border-right: 1px solid #000; */
+  padding-right: 0px;
   animation: typing 2s steps(15, end), blink-caret 0.5s step-end infinite;
 }
+
 
 @keyframes typing {
   from {

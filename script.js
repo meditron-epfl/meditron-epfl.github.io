@@ -1,4 +1,4 @@
-const words = ["implementable", "helpful", "safe", "relevant", "coherent", "complete", "concise"];
+const words = ["safe", "implementable", "helpful", "relevant", "coherent", "complete", "concise"];
 let index = 0;
 
 function typeNextWord() {
