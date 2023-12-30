@@ -16,13 +16,11 @@ body {
   text-align: center;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 50px;
   margin-top: 5%;
-  padding: 10px;
   /* Center content horizontally but without margins */
   margin-left: auto;
   margin-right: auto;
-
+  margin-bottom: 0px;
 }
 
 .container .description{
@@ -30,7 +28,6 @@ body {
   color: #555;
   line-height: 1.5;
   width: 100%;
-  margin-bottom: 5%;
 }
 .container .description a {
   /* no underline, but add bold and italic */
@@ -41,9 +38,78 @@ body {
 }
 /* on hover, change the color to red SOFTLY */
 .container .description a:hover {
-  color: red;
+  color: purple;
   transition: color 0.3s;
 }
+.typing-container {
+  color: #555 ;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  text-align: left; /* Align text to the left */
+  white-space: nowrap;
+  width: 60%;
+  margin-left: auto;
+  font-size: 18px;
+  height: 60px;
+}
+
+.typing {
+  display: inline-block;
+  padding-right: 3px;
+  animation: typing 2s steps(15, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+/* Add a help button style for this: <div class="help-button">
+      <a href="/pages/participate.html">
+        <button class="button">Help us</button>
+      </a>
+    </div>
+*/
+.help-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px; /* Adjust the margin for better spacing */
+  margin-bottom: 20px; /* Adjust the margin for better spacing */
+}
+
+button.button {
+  background-color: #555;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  padding: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.button:hover {
+  background-color: #333; /* Darken the background on hover */
+}
+
 
 /* Make a logos section with 2 logos separated by a vertical line */
 
@@ -89,10 +155,9 @@ body {
 
 .people-title {
   font-weight: bold;
-  margin-bottom: 30px;
   font-size: 22px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 60px;
 }
 
 .people {
@@ -104,7 +169,7 @@ body {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .person {
