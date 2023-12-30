@@ -60,6 +60,24 @@ body {
   animation: typing 2s steps(15, end), blink-caret 0.5s step-end infinite;
 }
 
+.about-content {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 40px;
+  width: 60%;
+}
+
+.about-content a {
+  color: #555;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* on hover, change color to #6c5ce7; */
+.about-content a:hover {
+  color: #6c5ce7;
+  transition: color 0.3s;
+}
+
 
 @keyframes typing {
   from {
