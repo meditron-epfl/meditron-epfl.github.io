@@ -16,7 +16,7 @@ body {
   text-align: center;
   width: 100%;
   overflow: hidden;
-  margin-top: 5%;
+  margin-top: 2%;
   /* Center content horizontally but without margins */
   margin-left: auto;
   margin-right: auto;
@@ -36,12 +36,15 @@ body {
   align-items: center;
   white-space: nowrap;
   margin-left: 38%; /* Adjust the margin for better positioning */
-  font-size: 18px;
   height: 60px;
-  width: 100%
+  width: 100%;
+  font-size: 20px;
 }
 
 .typing {
+  color: #6c5ce7;
+  font-size: bold;
+  font-size: 20px;
   display: inline-block;
   /*border-right: 1px solid #000; */
   padding-right: 0px;
@@ -85,36 +88,38 @@ body {
   }
 }
 
-/* Add a help button style for this: <div class="help-button">
-      <a href="/pages/participate.html">
-        <button class="button">Help us</button>
-      </a>
-    </div>
-*/
 .help-button {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 100%;
-  margin-top: 20px; /* Adjust the margin for better spacing */
-  margin-bottom: 20px; /* Adjust the margin for better spacing */
+  height: 80px;
+  color: black;
 }
 
-button.button {
-  background-color: #555;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  border: none;
-  padding: 20px;
+.help-button a {
+  display: inline-block;
   border-radius: 4px;
+  background-color: lightslategrey;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 60px;
+  font-size: 18px;
+  width: 300px;
+  height: 60px;
+  font-weight: bold;
+  transition: all 0.5s;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+
 }
 
-button.button:hover {
-  background-color: #333; /* Darken the background on hover */
+/* on hover, change color to #fff; */
+.help-button a:hover {
+  background-color: #6c5ce7;
+  transition: all 0.5s;
 }
 
 
@@ -156,7 +161,6 @@ button.button:hover {
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
-  padding: 10px;
   text-align: center;
 }
 
