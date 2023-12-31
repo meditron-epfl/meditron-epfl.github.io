@@ -119,7 +119,8 @@ body {
 /* on hover, change color to #fff; */
 .help-button a:hover {
   background-color: #6c5ce7;
-  transition: all 0.5s;
+  color: white;
+  transition: background-color 1s;
 }
 
 
